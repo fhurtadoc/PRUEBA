@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">    
-    <title>LISTAR POR RADICADO</title>
-</head>
-<body>
-<form action="controller.php?action=list_services">
-<label for="buscar">Buscar</label>    
-<input type="text" name="dependencia" id="dependencia"> 
-<input type="submit" value="Buscar">
-</form>
-
-
-
-</body>
-</html>
+<?php
+require_once('conexion.php');
+$query = "SELECT radi_nume_radi  FROM radicado";
+$result = pg_query($conexion, $query);
+$list = pg_fetch_array($result);
+$jsonstring = json_encode($list);
+echo $jsonstring;

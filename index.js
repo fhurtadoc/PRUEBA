@@ -1,27 +1,25 @@
 $(document).ready(function () {
-  $(document).ready(function () {
-    $("#table_list").DataTable();
-  });
+  $("#table_list").DataTable();
+
   getListado();
 });
 
 function tableData(data) {
-  $(".dataTable").dataTable().fnClearTable();
-
   for (let i = 0; i < data.length; i++) {
     var rowIndex = $(".dataTable")
       .dataTable()
       .fnAddData([
         data[i].radi_nume_radi,
-        data[i].usua_nomb,
-        data[i].depe_nomb,
         data[i].anex_codigo,
+        data[i].depe_nomb,
+        data[i].usua_nomb,
       ]);
   }
 }
 
 function getListado() {
-  $.get("list_radicado.php", function (res, err) {
+  $.post("Controller.php", { action: "list" }, function (res, err) {
+    console.log(res);
     let listado = JSON.parse(res);
     let td = "";
 
