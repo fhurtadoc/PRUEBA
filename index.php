@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>    
     <script src="index.js"></script>
 
-    <title>Document</title>
+    <title>LISTA COMPLETA</title>
+
 </head>
-
 <body>
-    <table id="table" class="table table-striped">
-        <tr>
-            <th>Numero Radicado</th>
-            <th>Anexos</th>
-            <th>Dependencia</th>
-            <th>Usuario</th>
-        </tr>
-        <tbody id="contenido">
-
-        </tbody>
-    </table>
-
+<a href="list_radicado.php">listar por radicado</a>    
+<table id="table">
+    <tr>
+      <th>radicado</th>
+      <th>anexos</th>
+      <th>dependencia</th>
+      <th>usuario</th>
+    </tr>    
+    <tr id="contenido">
+      
+    </tr>
+  </table> 
+    
 </body>
 
 </html>
