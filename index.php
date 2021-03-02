@@ -11,7 +11,8 @@
 
     <script src="index.js"></script>
 
-    <title>Document</title>
+    <title>LISTA COMPLETA</title>
+
 </head>
 
 <body>

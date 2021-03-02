@@ -1,12 +1,17 @@
-<?php
-include_once('conexion.php');
-$query = "SELECT radi_nume_radi, u.usua_nomb, d.depe_nomb, ax.anex_codigo  FROM radicado r 
-INNER JOIN usuario u ON radi_usua_actu=u.id 
-INNER JOIN dependencia d ON r.depe_codi= d.depe_codi 
-INNER JOIN anexos ax ON r.radi_nume_radi=anex_radi_nume
-LIMIT 10";
-$result = pg_query($conexion, $query);
-$list = pg_fetch_all($result);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>LISTAR POR RADICADO</title>
+</head>
+<body>
+<form action="controller.php?action=list_services">
+<label for="buscar">Buscar</label>    
+<input type="text" name="dependencia" id="dependencia"> 
+<input type="submit" value="Buscar">
+</form>
 
-$jsonstring = json_encode($list);
-echo $jsonstring;
+
+
+</body>
+</html>

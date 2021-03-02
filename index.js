@@ -26,14 +26,5 @@ function getListado() {
     let td = "";
 
     tableData(listado);
-    //for (let row of listado) {
-    //  td = `<tr>
-    //        <td>${row.radi_nume_radi}</td>
-    //        <td>${row.usua_nomb}</td>
-    //        <td>${row.depe_nomb}</td>
-    //        <td>${row.anex_codigo}</td> </tr>`;
-    //
-    //  $("#contenido").append(td);
-    //}
   });
 }
