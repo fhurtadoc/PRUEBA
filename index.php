@@ -24,7 +24,7 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <h2>Listado de dependencias</h2>
-                    <table id="table_list" class="table table-striped datetable">
+                    <table id="table_list" class="table table-striped dataTable">
                         <thead>
                             <tr>
                                 <th class="text_center">Numero Radicado</th>
